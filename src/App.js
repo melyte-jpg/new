@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import signup from "./components/signup";
-import login from "./components/login";
+import SignUp from "./components/signup.js";
+import Login from "./components/login.js";
 
 function App() {
   const [users, setUsers] = useState([]); 
@@ -12,8 +12,8 @@ function App() {
 
      }}>
       <h1>MY-WEBSITE</h1>
-      <signup users={users} setUsers={setUsers} />
-      <login users={users} />
+      <Signup users={users} setUsers={setUsers} />
+      <Login users={users} />
     </div>
   );
 }

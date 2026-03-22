@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 
 function Login({ users }) {
+  
+
   const [emailOrPhone, setEmailOrPhone] = useState("");
   const [password, setPassword] = useState("");
 
@@ -13,14 +15,19 @@ function Login({ users }) {
     } else {
       alert("Invalid login info.");
     }
-  };
+  }
 
   return (
-    <div style={{ marginTop: "30px" }}>
+    <div style={{ marginTop: "20px"
+      
+     }}>
+      
+
       <h2>Login</h2>
       <input type="text" placeholder="Email or Phone" value={emailOrPhone} onChange={e => setEmailOrPhone(e.target.value)} /><br /><br />
       <input type="password" placeholder="Password" value={password} onChange={e => setPassword(e.target.value)} /><br /><br />
-      <button onClick={handleLogin}>Login</button>
+     <button onClick={handleLogin}>Login</button>
+            
     </div>
   );
 }
