@@ -12,7 +12,7 @@ function App() {
 
      }}>
       <h1>MY-WEBSITE</h1>
-      <Signup users={users} setUsers={setUsers} />
+      <SignUp users={users} setUsers={setUsers} />
       <Login users={users} />
     </div>
   );
